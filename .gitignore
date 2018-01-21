@@ -1,0 +1,22 @@
+# Blacklist files/folders in ~
+/*
+
+# ~/ folder
+!.gitignore
+!.bash_profile
+!.bashrc
+!.gitignore_global
+!.gitconfig
+!.xinitrc
+!.xprofile
+!.Xresources
+!.Xmodmap
+!.zshrc
+
+# ~/.config folder
+!.config/
+.config/*
+!.config/i3/
+!.config/i3status/
+!.config/libinput-gestures.conf
+!.config/compton.conf
