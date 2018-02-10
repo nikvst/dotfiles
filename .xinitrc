@@ -45,7 +45,7 @@ xset r rate 200 70
 # export GDK_DPI_SCALE=0.5
 
 
-xrandr --dpi 220
+xrandr --dpi 192
 libinput-gestures-setup start
 export TERMINAL=alacritty
 exec i3
