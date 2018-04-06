@@ -12,3 +12,5 @@
 [user]
 	name = Никита Встовский	
 	email = nikita.vstovsky@fogstream.ru
+[core]
+	editor = vim

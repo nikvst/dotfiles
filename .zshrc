@@ -110,3 +110,5 @@ fpath=(~/.zsh/completion $fpath)
 
 # vgaswitch
 alias dgpu-off="sudo /usr/share/acpi_call/examples/turn_off_gpu.sh" 
+
+alias open="xdg-open"
