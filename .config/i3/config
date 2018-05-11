@@ -192,7 +192,9 @@ bindsym $mod+Ctrl+l exec i3lock -c 000000
 exec_always feh --bg-scale /home/nikvst/Изображения/wallhaven-586360.jpg
 
 # screenshot to clipboard
-bindsym --release Shift+Print exec scrot -s -q 100 -e 'xclip -selection clipboard -target image/png $f && rm $f'
+bindsym --release Print exec maim | xclip -selection clipboard -t image/png
+bindsym --release Ctrl+Print exec maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym --release Shift+Print exec maim -s | xclip -selection clipboard -t image/png
 
 # compton
 exec compton --config /home/nikvst/.config/compton.conf -b

@@ -45,7 +45,8 @@ xset r rate 200 70
 # export GDK_DPI_SCALE=0.5
 
 
-xrandr --output eDP1 --dpi 192
+xrandr --output eDP1 --primary --dpi 192 
+xrandr --output HDMI1 --auto --left-of eDPI1  
 libinput-gestures-setup start
 export TERMINAL=alacritty
 exec i3
