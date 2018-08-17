@@ -196,5 +196,8 @@ bindsym --release Print exec maim | xclip -selection clipboard -t image/png
 bindsym --release Ctrl+Print exec maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym --release Shift+Print exec maim -s | xclip -selection clipboard -t image/png
 
+# sticky window
+bindsym $mod+shift+s sticky toggle
+
 # compton
 exec compton --config /home/nikvst/.config/compton.conf -b

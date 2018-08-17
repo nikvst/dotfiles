@@ -78,5 +78,3 @@ cpu_temperature 0 {
 	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input"
 }
 
-
-
