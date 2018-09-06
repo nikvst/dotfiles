@@ -99,6 +99,11 @@ export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 alias mkvirtualenv2='mkvirtualenv --python=/usr/bin/python2'
 
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+
 # use zsh theme virtualenv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 

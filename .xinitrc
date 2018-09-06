@@ -44,6 +44,7 @@ xset r rate 200 70
 # export GDK_SCALE=2
 # export GDK_DPI_SCALE=0.5
 
+export OPTIMUS_PREFIX=primusrun
 
 xrandr --output eDP1 --primary --dpi 192 
 xrandr --output HDMI1 --auto --left-of eDPI1  
