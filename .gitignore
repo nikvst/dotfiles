@@ -21,3 +21,4 @@
 !.config/libinput-gestures.conf
 !.config/compton.conf
 !.config/dunst/
+!.config/redshift.conf
