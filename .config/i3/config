@@ -237,5 +237,12 @@ exec --no-startup-id redshift-gtk
 
 # set wallpapers 
 exec_always feh --bg-scale /home/nikvst/Изображения/wallhaven-586360.jpg
+
+# run conky
+exec --no-startup-id conky
+
 # ============================================================================
 
+# Focus follows mouse
+# See https://i3wm.org/docs/userguide.html#_focus_follows_mouse
+focus_follows_mouse no

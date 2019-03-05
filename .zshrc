@@ -104,6 +104,9 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # use zsh theme virtualenv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
@@ -117,3 +120,4 @@ fpath=(~/.zsh/completion $fpath)
 alias dgpu-off="sudo /usr/share/acpi_call/examples/turn_off_gpu.sh" 
 
 alias open="xdg-open"
+
