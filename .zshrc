@@ -2,12 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/nikvst/.oh-my-zsh
+export ZSH=/home/nikvst/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster-custom"
+#ZSH_THEME="agnoster-custom"
+ZSH_THEME=powerlevel10k/powerlevel10k
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -60,6 +61,7 @@ ZSH_THEME="agnoster-custom"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  virtualenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -104,11 +106,14 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
+# export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs git)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs virtualenv pyenv time)
+
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
 
 # use zsh theme virtualenv prompt
-export VIRTUAL_ENV_DISABLE_PROMPT=1
+# export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 #
 export DEFAULT_USER="nikvst"
@@ -120,4 +125,7 @@ fpath=(~/.zsh/completion $fpath)
 alias dgpu-off="sudo /usr/share/acpi_call/examples/turn_off_gpu.sh" 
 
 alias open="xdg-open"
+
+alias xbs="xbacklight -set"
+
 
